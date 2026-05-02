@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+ENV/
+bin/
+lib/
+include/
+share/
+pyvenv.cfg
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Data files (CERT r6.2 raw logs are too large for Git)
+r6.2/
+
+# Processed data (Numpy files can be very large)
+processed/*.npy
+
+# Leave small metadata/configs in processed
+!processed/*.pkl
+!processed/*.json
+
+# Models (Keep if small, ignore if large)
+# models/
+
+# Distribution / packaging
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# Plots (Optional: usually kept for documentation, but can be ignored if regenerated)
+# *.png
+
+# Utility scripts
+get-pip.py
