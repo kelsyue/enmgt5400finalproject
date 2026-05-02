@@ -218,5 +218,4 @@ with open(os.path.join(OUT_DIR, "scaler.pkl"),          "wb") as f: pickle.dump(
 with open(os.path.join(OUT_DIR, "feature_cols.pkl"),    "wb") as f: pickle.dump(feature_cols,    f)
 with open(os.path.join(OUT_DIR, "malicious_users.pkl"), "wb") as f: pickle.dump(malicious_users, f)
 
-print(f"\n✅ Preprocessing v1 complete! Features: {len(feature_cols)}")
-print("   Next step: python lstm_training.py")
+print(f"\nPreprocessing v1 complete! Features: {len(feature_cols)}")

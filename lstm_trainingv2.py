@@ -190,7 +190,5 @@ plt.tight_layout()
 plt.savefig("train_reconstruction_errors.png", dpi=150, bbox_inches="tight")
 print("  Saved train_reconstruction_errors.png")
 
-print(f"\n✅ Training v2 complete!")
 print(f"   Best model: {MODEL_DIR}best_model.keras")
 print(f"   Threshold:  {threshold:.6f}")
-print("   Next step: caffeinate -i python3 evaluation.py")

@@ -257,5 +257,4 @@ np.save(os.path.join(OUT_DIR, "u_test.npy"),  u_test)
 with open(os.path.join(OUT_DIR, "feature_cols.pkl"),    "wb") as f: pickle.dump(feature_cols,    f)
 with open(os.path.join(OUT_DIR, "malicious_users.pkl"), "wb") as f: pickle.dump(malicious_users, f)
 
-print(f"\n✅ Preprocessing v2 complete! Features: {len(feature_cols)}")
-print("   Next step: caffeinate -i python3 lstm_training.py")
+print(f"\nPreprocessing v2 complete! Features: {len(feature_cols)}")

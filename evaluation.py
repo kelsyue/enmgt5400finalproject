@@ -199,6 +199,4 @@ plt.tight_layout()
 plt.savefig("shap_importance.png", dpi=150, bbox_inches="tight")
 print("  Saved shap_importance.png")
 
-print("\n✅ Week 4 complete!")
 print("   Plots: evaluation.png, score_distribution.png, shap_importance.png")
-print("   Next step: write your final report using these results.")

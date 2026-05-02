@@ -33,6 +33,7 @@ This project implements an LSTM autoencoder to detect insider threats on the CER
 ├── lstm_trainingv1.py             # Baseline LSTM autoencoder training
 ├── lstm_trainingv2.py             # Improved model (BatchNorm, narrower bottleneck)
 ├── evaluation.py                  # Test evaluation + ROC/PR/SHAP
+├── demo_gui.py                    # Interactive visualization dashboard
 ├── data_analysis.py               # Week 1: EDA and class imbalance analysis
 └── README.md
 ```
@@ -76,6 +77,16 @@ This project implements an LSTM autoencoder to detect insider threats on the CER
    python evaluation.py
    ```
    Outputs: `evaluation.png`, `score_distribution.png`, `shap_importance.png`.
+
+6. **Interactive Dashboard**
+   ```bash
+   python demo_gui.py
+   ```
+   The dashboard provides an interactive way to explore the model's performance:
+   - **Population Scan**: Visualize the entire test population and run a system-wide threat scan.
+   - **Sensitivity Adjustment**: Tune the detection threshold in real-time to see impact on True/False Positives.
+   - **User Investigation**: Click any user in the grid to see a behavioral breakdown of which features contributed most to their anomaly score.
+   - **Metric Tabs**: Switch between detailed views, ROC curves, and training metrics.
 
 ## Generated plots
 
